@@ -1,0 +1,67 @@
+# ============================
+# Archivos del sistema
+# ============================
+.DS_Store
+Thumbs.db
+
+# ============================
+# Entorno virtual de Python
+# ============================
+env/
+venv/
+
+# ============================
+# Archivos de Python
+# ============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+
+# ============================
+# Archivos de logs y backups
+# ============================
+*.log
+*.bak
+*.swp
+
+# ============================
+# Configuración local
+# ============================
+*.env
+.env.local
+.env.*.local
+
+# ============================
+# Node / Frontend
+# ============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+build/
+.cache/
+.tmp/
+
+# ============================
+# IDEs y editores
+# ============================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ============================
+# Archivos de pruebas/coverage
+# ============================
+coverage/
+*.cover
+*.coverage
+*.lcov
