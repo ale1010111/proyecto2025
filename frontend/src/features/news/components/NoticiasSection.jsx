@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";         // ✅ NUEVO: para navegar sin recargar
-import PublicAPI from "../../services/publicApi";
-import Button from "../../components/Button/Button";               // ✅ NUEVO: botón reutilizable (explicado abajo)
+import PublicAPI from '@services/publicApi'
+import Button from '@components/Button/Button'               // ✅ NUEVO: botón reutilizable (explicado abajo)
 
 export default function NoticiasSection() {
   const [noticias, setNoticias] = useState([]);
@@ -41,7 +41,7 @@ export default function NoticiasSection() {
             <h3 className="text-xl font-semibold mb-2">{noticia.titulo}</h3>
             <p className="text-gray-600 text-sm mb-3">{noticia.resumen}</p>
             <Link
-              to={`/noticia/${noticia.slug}`}
+              to={`/noticias/${noticia.slug}`}
               className="text-blue-600 font-medium hover:underline"
             >
               Leer más →

@@ -4,9 +4,9 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./auth/ProtectedRoute";
-import NewsList from "./pages/News/NewsList";
-import NewsDetail from "./pages/News/NewsDetail";
-import NoticiasSection from "./components/News/NoticiasSection";
+import NewsPage from "./pages/News/NewsPage.jsx";
+import NewsDetailPage from "./pages/News/NewsDetailPage.jsx";
+import NoticiasSection from "./features/news/components/NoticiasSection.jsx";
 
 export default function App() {
   return (
@@ -16,8 +16,8 @@ export default function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/noticias" element={<NoticiasSection />} />
-      <Route path="/news" element={<NewsList />} />
-       <Route path="/noticia/:slug" element={<NewsDetail />} />
+      <Route path="/news" element={<NewsPage />} />
+      <Route path="/noticias/:slug" element={<NewsDetailPage />} />
 
       {/* Ruta protegida */}
       <Route

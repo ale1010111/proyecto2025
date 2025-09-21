@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import PublicAPI from "../services/publicApi";
+import PublicAPI from '@services/publicApi'
 
 export default function NewsDetail() {
   const { slug } = useParams(); // obtener el slug de la URL
